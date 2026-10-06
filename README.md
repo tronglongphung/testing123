@@ -1,17 +1,3 @@
-# MangaDex Repair for Mangayomi
-
-An independent repair fork of the m2k3a MangaDex JavaScript extension. Includes 45 languages. Requires Mangayomi with JavaScript extension support (metadata minimum 0.5.0). Actual compatibility must be checked in your installed app.
-
-## Publish to your GitHub
-
-1. Create a public GitHub repository, named `testing123`.
-2. Before uploading, open a terminal in this folder and run:
-
-   ```sh
-   node scripts/configure.cjs tronglongphung testing123
-   npm test
-   ```
-
    For a different repository or branch, substitute its name and pass the branch as the third argument.
 3. Upload this folder's contents to the repository root on the selected branch. Include `mangadex.js`, `index.json`, `LICENSE`, and `NOTICE`.
 4. Add the printed raw `index.json` URL to Mangayomi's Manga repository field. Refresh Extensions and install **MangaDex Repair** in your language.
@@ -44,9 +30,5 @@ Run `npm test` with Node.js 18 or newer. Tests execute extension code with mocke
 This extension cannot restore chapters removed from MangaDex, bypass network blocks, or read external publisher-only chapters. The original user's precise failure was not reproduced inside Mangayomi, so these are verified code repairs rather than a guaranteed fix for that device.
 
 ## Sources and license
-
-- Upstream code: https://github.com/m2k3a/mangayomi-extensions/blob/main/javascript/manga/src/all/mangadex.js
-- Mangayomi extension guide: https://github.com/Swakshan/mangayomi-swak-extensions/blob/main/CONTRIBUTING-JS.md
-- MangaDex API: https://api.mangadex.org
 
 Apache-2.0. See `LICENSE` and `NOTICE`.
