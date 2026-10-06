@@ -1,0 +1,6 @@
+MangaDex Repair for Mangayomi
+Derived from m2k3a/mangayomi-extensions, javascript/manga/src/all/mangadex.js, version 0.1.4.
+Upstream: https://github.com/m2k3a/mangayomi-extensions
+Distributed under the Apache License 2.0; see LICENSE.
+Upstream repository notice: Copyright 2023 Moustapha Kodjo Amadou.
+Modified 2026-10-06: API validation, pagination guards, search encoding, content rating preferences, cover handling, and distinct source IDs.
