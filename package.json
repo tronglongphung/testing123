@@ -1,7 +1,11 @@
 {
-  "name": "mangadex-mangayomi-repair",
-  "version": "0.1.5",
+  "name": "comick-live-mangayomi",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {"test": "node --test tests/*.test.cjs", "configure": "node scripts/configure.cjs"},
-  "engines": {"node": ">=18"}
+  "scripts": {
+    "test": "node --test tests/*.test.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
 }

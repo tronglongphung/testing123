@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Comick Live",
+    "id": 1910342401,
+    "baseUrl": "https://comick.live",
+    "lang": "en",
+    "typeSource": "single",
+    "iconUrl": "https://comick.live/favicon.ico",
+    "dateFormat": "",
+    "dateFormatLocale": "",
+    "isNsfw": false,
+    "hasCloudflare": true,
+    "sourceCodeUrl": "https://raw.githubusercontent.com/tronglongphung/testing123/main/comick.js",
+    "apiUrl": "https://comick.live/api",
+    "version": "0.1.0",
+    "isManga": true,
+    "itemType": 0,
+    "isFullData": false,
+    "appMinVerReq": "0.5.0",
+    "additionalParams": "",
+    "sourceCodeLanguage": 1,
+    "notes": "English chapters only. Search may require a manual Cloudflare challenge. Paste a Comick title URL into search to open it directly."
+  }
+]

@@ -1,12 +1,12 @@
-# Validation — 2026-10-06
+# Live validation — 2026-10-06
 
-Nine fixture tests passed under Node.js 26.7.0. Six failed against the original 0.1.4 code before the repairs. Covered API error handling, search encoding, empty latest feeds, malformed and multi-page pagination, rating preferences, and page server responses.
+Executed the source with a curl-backed Mangayomi Client adapter.
 
-Live checks executed the replacement provider with a curl-backed Client adapter against public MangaDex endpoints:
+- Public homepage: 50 popular titles parsed.
+- Test title: The Beginning After the End.
+- English chapter list: 249 chapters across five API pages.
+- Reader page: one ordered image URL parsed.
+- Fetching that image: HTTP 403. With browser User-Agent and Referer: HTTP 429. No repeated attempts after rate-limit response.
+- Search API: HTTP 403 Cloudflare challenge.
 
-- Popular listing: 20 titles.
-- First sampled title: zero English chapters returned by the API.
-- Second sampled title: 216 chapters.
-- Sample chapter: one image URL, fetched with HTTP 200.
-
-The adapter validates request/response logic but not Mangayomi's embedded runtime or the user's network. Mangayomi in-app verification remains outstanding. A concrete cause for the user's device-specific failure has not been established.
+Ten fixture tests pass. Mangayomi installation and image rendering have not been verified. This is a working catalogue/chapter parser and a candidate reader integration; it is not a verified end-to-end source for this network. The JSON catalogue cannot remove upstream Cloudflare or CDN restrictions.
